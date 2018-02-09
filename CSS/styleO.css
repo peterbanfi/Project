@@ -98,5 +98,26 @@
     position: absolute;
     top: 90px;
     left: 0px;
-    box-shadow: 0px 0px 15px 0px #888888
+    box-shadow: 0px 0px 15px 0px #888888;
+}
+
+.oliver .onegy {
+    background: linear-gradient(to bottom right, #24cacb, #1b617b);
+}
+
+.oliver .onegy .box {
+    width: 1000px;
+    font-style: italic;
+    margin: auto;
+    padding: 100px 0 120px 0px;
+    text-align: center;
+    color: white;
+}
+
+.oliver .onegy .box .szoveg {
+    font-size: 20px;
+}
+
+.oliver .onegy .box .kolto {
+    opacity: 0.5;
 }
