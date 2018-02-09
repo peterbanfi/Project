@@ -1,4 +1,8 @@
 body {
-    width: 1500 px;
-    margin: 0 auto 0;
+    margin: 0;
+}
+
+.main {
+    margin: 0 auto 0 auto;
+    background: white;
 }
