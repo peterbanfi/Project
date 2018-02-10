@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+}
+
+.errorContainer {
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    margin: auto;
+    width: 400px;
+    height: auto;
+    top: 200px;
+}
+
+a {
+    line-height: 0;
+}
