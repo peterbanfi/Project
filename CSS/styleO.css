@@ -100,3 +100,111 @@
     left: 0px;
     box-shadow: 0px 0px 15px 0px #888888
 }
+
+.oliver .onegy {
+    background: linear-gradient(to bottom right, #24cacb, #1b617b);
+}
+
+.oliver .onegy .box {
+    width: 1000px;
+    font-style: italic;
+    margin: auto;
+    padding: 100px 0 120px 0px;
+    text-align: center;
+    color: white;
+}
+
+.oliver .onegy .box .szoveg {
+    font-size: 20px;
+}
+
+.oliver .onegy .box .kolto {
+    opacity: 0.5;
+}
+
+.hat {
+    background: #21728f;
+}
+
+.extra1 {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.extra1 h3 {
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+}
+
+.extra1 p {
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.extra1 form {
+    position: absolute;
+    top: 250px;
+    left: 200px;
+}
+
+.extra1 input[type="text"] {
+    height: 38px;
+    width: 450px;
+    font-size: 15px;
+    border: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.extra1 input[type="button"] {
+    margin-left: -4px;
+    height: 40px;
+    width: 150px;
+    color: white;
+    background: #113847;
+    border: none;
+    font-size: 20px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.extra2 {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    padding-top: 90px;
+    padding-bottom: 190px;
+}
+
+.extra2 h3 {
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.extra2 form {
+    position: absolute;
+    top: 200px;
+    left: 220px;
+}
+
+.extra2 input[type="button"] {
+    height: 40px;
+    width: 250px;
+    color: white;
+    background: #21728f;
+    border: none;
+    font-size: 20px;
+    border-radius: 25px;
+}
