@@ -1,8 +1,115 @@
+a {
+    text-decoration: none;
+    color: grey;
+}
+
 body {
-    margin: 0;
+    margin-top: 0;
 }
 
 .main {
     margin: 0 auto 0 auto;
     background: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+#download input {
+    border: none;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: rgb(67, 150, 170);
+    font-weight: bold;
+}
+
+footer {
+    border-top: 1px solid rgb(199, 199, 199);
+    position: relative;
+}
+
+h1,
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+    font-size: 58px;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+h3 {
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+img {
+    height: 450px;
+}
+
+.peti {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+#background {
+    height: 500px;
+    background: linear-gradient(600deg, rgb(0, 58, 92), rgb(111, 195, 216));
+    color: white;
+    display: block;
+}
+
+#info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    word-spacing: 20px;
+}
+
+#info a:nth-child(2) {
+    word-spacing: 0px;
+}
+
+#info a {
+    color: white;
+}
+
+#copy {
+    position: absolute;
+    left: 250px;
+    color: grey;
+}
+
+.p-head a {
+    color: white;
+}
+
+#p-content {
+    display: inline-block;
+    width: 550px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+
+#p-content p {
+    margin-bottom: 30px;
+}
+
+#phone {
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+
+#social {
+    position: absolute;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    top: 0;
+    right: 250px;
+    color: grey;
+    word-spacing: 10px;
 }
