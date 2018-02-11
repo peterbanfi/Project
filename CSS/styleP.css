@@ -113,3 +113,23 @@ img {
     color: grey;
     word-spacing: 10px;
 }
+
+.fa-twitter:hover {
+    color: #1DA1F2;
+}
+
+.fa-facebook-f:hover {
+    color: #4867AA;
+}
+
+.fa-youtube:hover {
+    color: #FF0000;
+}
+
+.fa-dribbble:hover {
+    color: #DF3E7B;
+}
+
+.fa-vimeo-v:hover {
+    color: #172322;
+}
