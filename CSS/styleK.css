@@ -3,7 +3,7 @@ body {
 }
 
 .comingsoonBody {
-    background-image: url("../IMG/forest-background.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("../IMG/forest-background.jpg");
     background-color: rgba(0, 0, 0, 0.76);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -13,11 +13,11 @@ body {
 
 .errorContainer {
     font-family: 'Nunito', sans-serif;
-    position: relative;
-    margin: auto;
-    width: 400px;
-    height: auto;
-    top: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
 }
 
 a {
@@ -41,3 +41,5 @@ a {
 .comingsoonContainer p {
     font: 13px 'Nunito', sans-serif;
 }
+
+.middle {}
