@@ -8,6 +8,7 @@ function getData(url, callbackFunc) {
     xhttp.open("GET", url, true);
     xhttp.send();
 }
+console.log('hello');
 
 function successAjax(xhttp) {
     // itt a json content, benne a data változóban

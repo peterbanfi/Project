@@ -1,0 +1,13 @@
+th {
+    height: 50px;
+    width: 130px;
+    border: 1 px solid black;
+    background-color: darkcyan;
+}
+
+td {
+    height: 50px;
+    width: 130px;
+    border: 1 px solid black;
+    background-color: darkseagreen;
+}
