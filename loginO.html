@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/loginO.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="login">
+            <form action="">
+                <input type="text" placeholder="Username" id="user">
+                <input type="password" placeholder="***********" id="pass">
+                <span id="error"></span>
+                <span id="success"></span>
+                <input type="button" value="Login" onclick="login()">
+                <input type="checkbox" name="rem" id="">
+                <label for="rem">Remember me</label>
+            </form>
+            <a href="#" onclick="forgot()">Forgot password?</a>
+        </div>
+        <div class="camera">
+            <i class="fa fa-camera" style="font-size:50px"></i>
+        </div>
+        <div class="footer">
+            <span>Copyright &copy 2018 Your brand name.</span>
+        </div>
+    </div>
+    <script src="js/loginO.js"></script>
+</body>
+
+</html>

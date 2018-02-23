@@ -1,0 +1,115 @@
+body {
+    background-color: #234465;
+}
+
+.container {
+    background: radial-gradient(#2F86D3, #859ED6, #234465);
+    width: 600px;
+    height: 600px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.camera {
+    background-color: #2D5377;
+    display: inline-block;
+    height: 100px;
+    width: 150px;
+    padding-top: 50px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 80px;
+    left: 225px;
+}
+
+.login {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    height: 300px;
+    width: 400px;
+    border: 1px solid white;
+    border-radius: 2%;
+}
+
+input {
+    display: block;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 300px;
+    height: 30px;
+    position: relative;
+    top: 120px;
+    margin-bottom: 10px;
+    left: 50px;
+}
+
+input[type="button"] {
+    width: 300px;
+    height: 30px;
+    position: absolute;
+    top: 220px;
+    left: 50px;
+    color: white;
+    background: linear-gradient(to right, #0681A3, #055695);
+    border: none;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    position: absolute;
+    top: 265px;
+    left: 50px;
+}
+
+label {
+    display: inline-block;
+    position: absolute;
+    top: 265px;
+    left: 70px;
+    color: #25476C;
+}
+
+a {
+    display: inline-block;
+    position: absolute;
+    top: 265px;
+    left: 240px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #25476C;
+    font-style: italic;
+}
+
+i {
+    color: white;
+}
+
+.footer {
+    position: absolute;
+    top: 460px;
+    left: 190px;
+    color: white;
+}
+
+#error {
+    color: red;
+    font-size: 10px;
+    position: absolute;
+    top: 210px;
+    left: 50px;
+}
+
+#success {
+    color: green;
+    font-size: 10px;
+    position: absolute;
+    top: 210px;
+    left: 50px;
+}
