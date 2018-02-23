@@ -13,6 +13,7 @@ body {
     background: linear-gradient(330deg, rgba(11, 11, 70, 0.87), rgba(51, 155, 216, 0.925), rgba(11, 11, 70, 0.904));
     top: 50%;
     transform: translateY(30%);
+    box-shadow: 0 0 20px black;
 }
 
 /* #inputs {

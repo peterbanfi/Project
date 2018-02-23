@@ -23,13 +23,20 @@ function successAjax(xhttp) {
       Ha valemelyik függvényeteknek kell, akkor paraméterként adjátok át.
     */
     createTable(userDatas);
-    console.log(typeof userDatas.birthday);
 }
 
 getData('JS/adminP/users.json', successAjax);
 
 // Live servert használd mindig!!!!!
 /* IDE ÍRD A FÜGGVÉNYEKET!!!!!! NE EBBE AZ EGY SORBA HANEM INNEN LEFELÉ! */
+
+
+function beforeNinety(userDatas) {
+
+    for (var i = 0; i < userDatas.length; i++) {}
+
+}
+
 
 function createTable(userDatas) {
     var table = '';
