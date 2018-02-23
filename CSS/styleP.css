@@ -1,0 +1,190 @@
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+body {
+    margin: 0;
+}
+
+.main {
+    margin: 0 auto 0 auto;
+    background: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+    word-spacing: 0;
+}
+
+.dropdown:hover {}
+
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: white;
+    padding-left: 14px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    border: 1px solid rgb(245, 245, 245);
+    border-radius: 3px;
+    min-width: 121px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    word-spacing: 0;
+    padding: 6px;
+}
+
+.dropdown-content a:hover {
+    text-shadow: 0 0 10px white;
+}
+
+#download input {
+    border: none;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: rgb(67, 150, 170);
+    font-weight: bold;
+}
+
+#download input:hover {
+    color: white;
+    background: rgb(67, 150, 170);
+    cursor: pointer;
+}
+
+footer {
+    border-top: 1px solid rgb(199, 199, 199);
+    position: relative;
+}
+
+h1,
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+    font-size: 58px;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+h3 {
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+img {
+    height: 450px;
+}
+
+.peti {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+#background {
+    height: 500px;
+    background: linear-gradient(600deg, rgb(0, 58, 92), rgb(111, 195, 216));
+    color: white;
+    display: block;
+}
+
+#info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    word-spacing: 20px;
+}
+
+#info a:nth-child(2) {
+    word-spacing: 0px;
+}
+
+#info a {
+    color: white;
+}
+
+#info a:hover {
+    text-shadow: 0 0 10px white;
+}
+
+#copy {
+    position: absolute;
+    left: 250px;
+    color: grey;
+}
+
+.p-head a {
+    color: white;
+}
+
+#p-content {
+    display: inline-block;
+    width: 550px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+
+#p-content p {
+    margin-bottom: 30px;
+}
+
+#phone {
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+
+#social {
+    position: absolute;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    top: 0;
+    right: 250px;
+    color: grey;
+    word-spacing: 10px;
+}
+
+.fa-twitter:hover {
+    color: #1DA1F2;
+}
+
+.fa-facebook-f:hover {
+    color: #4867AA;
+}
+
+.fa-youtube:hover {
+    color: #FF0000;
+}
+
+.fa-dribbble:hover {
+    color: #DF3E7B;
+}
+
+.fa-vimeo-v:hover {
+    color: #172322;
+}

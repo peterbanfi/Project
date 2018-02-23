@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+}
+
+.comingsoonBody {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("../IMG/forest-background.jpg");
+    background-color: rgba(0, 0, 0, 0.76);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-clip: border-box;
+    background-size: cover;
+}
+
+.errorContainer {
+    font-family: 'Nunito', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+a {
+    line-height: 0;
+}
+
+.comingsoonContainer {
+    color: white;
+    position: relative;
+    margin-left: 120px;
+    width: 500px;
+    height: auto;
+    top: 150px;
+}
+
+.comingsoonContainer h1 {
+    font: bold 70px 'Josefin Sans', sans-serif;
+    margin-bottom: 10px;
+}
+
+.comingsoonContainer p {
+    font: 13px 'Nunito', sans-serif;
+}
+
+.middle {}

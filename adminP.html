@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/adminP.css">
+    <title>Admin P</title>
+</head>
+
+<body>
+    <div class="buttons">
+        <p>1990 előttiek
+            <input type="button" onclick="beforeNinety()" value="Mehet!">
+        </p>
+        <p>A 3 legidősebb
+            <input type="button" onclick="threeOldest()" value="Mehet!">
+        </p>
+        <p>Szűrt nevek
+            <input type="button" onclick="sort()" value="Mehet!">
+        </p>
+        <p>Városok
+            <input type="button" onclick="cities()" value="Mehet!">
+        </p>
+        <p>2000 előttiek
+            <input type="button" onclick="before2YK()" value="Mehet!">
+        </p>
+    </div>
+    <table>
+        <thead id="tablazatHead">
+        </thead>
+        <tbody id="tablazat">
+
+        </tbody>
+    </table>
+    <hr>
+    <div class="buttons">
+        <p>Statisztika
+            <input type="button" onclick="stat()" value="Mehet!">
+        </p>
+    </div>
+    <script src="js/adminP/users.json"></script>
+    <script src="js/adminP/users.js"></script>
+</body>
+
+</html>

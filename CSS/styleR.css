@@ -1,0 +1,119 @@
+.main {
+    margin: 0 auto 0 auto;
+    background: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1,
+h3,
+h4 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    font-family: 'Nunito', sans-serif;
+}
+
+label {
+    font-family: 'Nunito', sans-serif;
+}
+
+div.container1 {
+    border: none;
+    display: inline-block;
+    /* float: left; */
+    box-sizing: border-box;
+    width: 800px;
+    height: 965px;
+    position: relative;
+    margin-left: 170px;
+    padding: 60px 10px 25px 28px;
+}
+
+div.container2 {
+    border: none;
+    display: inline-block;
+    float: right;
+    box-sizing: border-box;
+    width: 355px;
+    height: 965px;
+    position: relative;
+    margin: 0px 170px 0px 0px;
+    padding: 170px 30px 25px 0px;
+    font-size: 18px;
+}
+
+div.container1 h3 {
+    font-size: 38px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+form input {
+    margin: 5px 0 5px 0;
+    padding: 10px;
+    border: solid 2px #ddd;
+    width: 700px;
+    display: block;
+    height: 20px;
+}
+
+form textarea {
+    margin: 5px 0 5px 0;
+    padding: 10px;
+    border: solid 2px #ddd;
+    width: 700px;
+    height: 220px;
+    display: block;
+}
+
+form input:focus,
+form textarea:focus {
+    border: solid 2px #2c87a0;
+}
+
+form [type='submit'] {
+    padding: 10px;
+    background: #2c87a0;
+    color: #fff;
+    border-radius: 20px;
+    width: 105px;
+    height: 45px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+form [type='submit']:hover {
+    color: #0d3f59;
+    background-color: #a3b8c1;
+    box-shadow: 4px 4px 4px;
+}
+
+div.container2 h4 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+div.container2 p#elso,
+div.container2 p#masodik,
+div.container2 a {
+    color: #7595a4;
+    text-decoration: none;
+    margin: 0;
+}
+
+div.container2 a:hover {
+    color: #0d3f59;
+    text-shadow: 4px 4px 4px;
+}

@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    margin: 0 auto;
+    background: white;
+    background: linear-gradient(150deg, rgb(105, 172, 211), rgb(33, 33, 78));
+    background: linear-gradient(330deg, rgba(11, 11, 70, 0.87), rgba(51, 155, 216, 0.925), rgba(11, 11, 70, 0.904));
+    top: 50%;
+    transform: translateY(30%);
+}
+
+/* #inputs {
+    width: 100px;
+    display: inline-block;
+    float: left;
+} */
+
+#center {
+    position: relative;
+    margin: 0 0;
+    top: 50px;
+    left: 120px;
+    width: 380px;
+}
+
+#border {
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 260px;
+    padding: 50px;
+}
+
+#username {
+    height: 30px;
+    width: 245px;
+    border: none;
+    border-radius: 2px;
+}
+
+#password {
+    height: 30px;
+    width: 245px;
+    border: none;
+    border-radius: 2px;
+    letter-spacing: 2px;
+}
+
+#login {
+    height: 30px;
+    width: 255px;
+    border: none;
+    text-align: center;
+    color: white;
+    background: rgb(0, 136, 204);
+    font-size: 12px;
+}
+
+.login::before {
+    font-weight: 900;
+    content: "\f007";
+}
+
+input {
+    margin: 4px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+a {
+    font-size: 15px;
+    font-style: italic;
+    color: black;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+a:hover {
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+#copy {
+    font-size: 14px;
+    font-weight: 100;
+    position: relative;
+    left: 50px;
+    color: white;
+}
+
+#icon {
+    width: 100px;
+    height: 100px;
+    background: rgb(18, 68, 100);
+    position: relative;
+    border-radius: 50px;
+    top: 50px;
+    left: 125px;
+    margin: 0;
+}
+
+#icon:hover {
+    cursor: pointer;
+}
+
+svg {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+}
+
+.fa-lg {
+    font-size: 60px;
+}
+
+span {
+    color: red;
+}
+
+p {
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+}
+
+input:hover {
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+#userIcon {
+    position: relative;
+    top: 30px;
+    left: 230px;
+    color: grey;
+}
+
+#passwordIcon {
+    position: relative;
+    top: 30px;
+    left: 230px;
+    color: grey;
+}
