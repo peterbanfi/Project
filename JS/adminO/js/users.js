@@ -24,7 +24,7 @@ function successAjax(xhttp) {
       A userDatas NEM GLOBÁLIS változó, ne is tegyétek ki globálisra. Azaz TILOS!
       Ha valemelyik függvényeteknek kell, akkor paraméterként adjátok át.
     */
-    createHead(head);
+    createHead(head, icons);
     createContent(userDatas, headline);
     stat(userDatas)
     document.querySelectorAll('input')[0].addEventListener('click', function () {
@@ -54,12 +54,15 @@ var head = ["Azonosító", "Felhasználónév", "Jelszó", "Vezetéknév", "Kere
 var headline = ["id", "username", "password", "firstname", "lastname", "country", "state", "zipcode",
     "city", "address", "sex", "birthdate", "email", "phone"
 ];
+var icons = ["recent_actors", "perm_identity", "vpn_key", "donut_large", "donut_small", "room", "gps_fixed", "gps_not_fixed",
+    "business", "home", "face", "date_range", "contact_mail", "contact_phone"
+];
 
-function createHead(headdata) {
+function createHead(headdata, icons) {
     var th;
     for (var i in headdata) {
         th = document.createElement('th');
-        th.textContent = headdata[i];
+        th.innerHTML = `<i class="material-icons">${icons[i]}</i><br>` + headdata[i];
         document.querySelector('thead').appendChild(th);
     }
 }
@@ -87,6 +90,7 @@ function button1(data) {
     resetTable();
     var head1 = ["Felhasználónév"];
     var headline1 = ["username"];
+    var icon = ["perm_identity"];
     var fiatal = data.filter(function (item) {
         var date1 = new Date(item.birthdate);
         if (date1.getFullYear() < 1990) {
@@ -95,7 +99,7 @@ function button1(data) {
         return false;
 
     });
-    createHead(head1);
+    createHead(head1, icon);
     createContent(fiatal, headline1);
 }
 
@@ -103,6 +107,7 @@ function button2(data) {
     resetTable();
     var head1 = ["Vezetéknév", "Keresztnév", "Születési dátum"];
     var headline1 = ["firstname", "lastname", "birthdate"];
+    var icon = ["donut_large", "donut_small", "date_range"];
     data.sort(function (a, b) {
         var date1 = new Date(a.birthdate);
         var date2 = new Date(b.birthdate);
@@ -114,7 +119,7 @@ function button2(data) {
         }
         return false;
     })
-    createHead(head1);
+    createHead(head1, icon);
     createContent(data, headline1);
 }
 
@@ -122,6 +127,7 @@ function button3(data) {
     resetTable();
     var head1 = ["Vezetéknév", "Keresztnév"];
     var headline1 = ["firstname", "lastname"];
+    var icon = ["donut_large", "donut_small"];
     data = data.filter(function (item) {
         var date1 = new Date(item.birthdate);
         if (date1.getFullYear() >= 1990 && date1.getFullYear() <= 2000 && item.sex == "férfi" && item.city == "Budapest" && item.state != "") {
@@ -141,7 +147,7 @@ function button3(data) {
         }
         return -1;
     });
-    createHead(head1);
+    createHead(head1, icon);
     createContent(data, headline1);
 }
 
@@ -149,6 +155,7 @@ function button4(data) {
     resetTable();
     var head1 = ["Város", "Lakosok"];
     var headline1 = ["city", "lakos"];
+    var icon = ["business", "accessibility"];
     var data1 = [];
     var datavaros = [];
     for (var i in data) {
@@ -165,7 +172,7 @@ function button4(data) {
             }
         }
     }
-    createHead(head1);
+    createHead(head1, icon);
     createContent(datavaros, headline1);
 }
 
@@ -173,6 +180,7 @@ function button5(data) {
     resetTable();
     var head1 = ["Vezetéknév", "Keresztnév", "Felhasználónév", "E-mail cím", "Telefonszám"];
     var headline1 = ["firstname", "lastname", "username", "email", "phone"];
+    var icon = ["donut_large", "donut_small", "perm_identity", "contact_mail", "contact_phone"];
     data = data.filter(function (item) {
         var date1 = new Date(item.birthdate);
         if (date1.getFullYear() < 2000 || item.city != "Budapest") {
@@ -181,7 +189,7 @@ function button5(data) {
         return false;
 
     });
-    createHead(head1);
+    createHead(head1, icon);
     createContent(data, headline1);
 }
 
