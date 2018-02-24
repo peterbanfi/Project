@@ -8,19 +8,13 @@ body {
     height: 600px;
     position: relative;
     margin: 0 auto;
-    background: white;
-    background: linear-gradient(150deg, rgb(105, 172, 211), rgb(33, 33, 78));
-    background: linear-gradient(330deg, rgba(11, 11, 70, 0.87), rgba(51, 155, 216, 0.925), rgba(11, 11, 70, 0.904));
+    /* Ez a háttér az eredeti képhez hasonló
+    background: linear-gradient(330deg, rgba(11, 11, 70, 0.87), rgba(51, 155, 216, 0.925), rgba(11, 11, 70, 0.904)); */
+    background: linear-gradient(330deg, rgb(0, 58, 92), rgb(111, 195, 216), rgb(0, 58, 92));
     top: 50%;
     transform: translateY(30%);
     box-shadow: 0 0 20px black;
 }
-
-/* #inputs {
-    width: 100px;
-    display: inline-block;
-    float: left;
-} */
 
 #center {
     position: relative;
@@ -58,7 +52,7 @@ body {
     border: none;
     text-align: center;
     color: white;
-    background: rgb(0, 136, 204);
+    background: rgb(67, 150, 170);
     font-size: 12px;
 }
 
@@ -96,7 +90,7 @@ a:hover {
 #icon {
     width: 100px;
     height: 100px;
-    background: rgb(18, 68, 100);
+    background: rgb(67, 150, 170);
     position: relative;
     border-radius: 50px;
     top: 50px;

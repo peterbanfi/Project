@@ -10,35 +10,44 @@
 </head>
 
 <body>
-    <div class="buttons">
-        <p>1990 előttiek
-            <input type="button" onclick="beforeNinety()" value="Mehet!">
-        </p>
-        <p>A 3 legidősebb
-            <input type="button" onclick="threeOldest()" value="Mehet!">
-        </p>
-        <p>Szűrt nevek
-            <input type="button" onclick="sort()" value="Mehet!">
-        </p>
-        <p>Városok
-            <input type="button" onclick="cities()" value="Mehet!">
-        </p>
-        <p>2000 előttiek
-            <input type="button" onclick="before2YK()" value="Mehet!">
-        </p>
-    </div>
-    <table>
-        <thead id="tablazatHead">
-        </thead>
-        <tbody id="tablazat">
+    <div id="container">
+        <div class="buttons">
+            <p>1990 előttiek
+                <input type="button" id="bN" onclick="beforeNinety()" value="Mehet!">
+            </p>
+            <p>A 3 legidősebb
+                <input type="button" id="tO" onclick="threeOldest()" value="Mehet!">
+            </p>
+            <p>Szűrt nevek
+                <input type="button" onclick="sort()" value="Mehet!">
+            </p>
+            <p>Városok
+                <input type="button" id="cOA" onclick="cities()" value="Mehet!">
+            </p>
+            <p>2000 előttiek
+                <input type="button" id="y2k" onclick="beforeY2K()" value="Mehet!">
+            </p>
+        </div>
+        <table>
+            <thead id="tablazatHead">
+            </thead>
+            <tbody id="tablazat">
 
-        </tbody>
-    </table>
-    <hr>
-    <div class="buttons">
-        <p>Statisztika
-            <input type="button" onclick="stat()" value="Mehet!">
-        </p>
+            </tbody>
+        </table>
+
+        <div class="buttons" id="statid">
+            <p>Statisztika
+                <input type="button" id="sort" onclick="stat()" value="Mehet!">
+            </p>
+        </div>
+        <div class="stats">
+            <p id="first"></p>
+            <p id="second"></p>
+            <p id="third"></p>
+            <p id="fourth"></p>
+            <p id="fifth"></p>
+        </div>
     </div>
     <script src="js/adminP/users.json"></script>
     <script src="js/adminP/users.js"></script>
