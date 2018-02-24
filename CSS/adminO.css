@@ -2,12 +2,36 @@ th {
     height: 50px;
     width: 130px;
     border: 1 px solid black;
-    background-color: darkcyan;
+    background-color: #00BCD4;
+    color: white;
 }
 
 td {
     height: 50px;
     width: 130px;
     border: 1 px solid black;
-    background-color: darkseagreen;
+    background-color: #B1EAF1;
+}
+
+body {
+    background: #2979FF;
+}
+
+p {
+    color: white;
+    font-size: 30px;
+    text-shadow: 0px 0px 5px white;
+}
+
+input {
+    background-color: #58B957;
+    height: 40px;
+    width: 150px;
+    border: 1px solid darkgreen;
+    border-radius: 5px;
+    box-shadow: 5px 5px 50px 5px darkgreen;
+}
+
+input:hover {
+    background: rgb(79, 173, 78);
 }
