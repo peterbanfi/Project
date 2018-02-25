@@ -1,0 +1,191 @@
+body {
+    background-color: rgb(0, 0, 0);
+    border-color: transparent;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+form {
+    padding: 30px 10px 15px;
+    height: 550px;
+    width: 550px;
+    display: block;
+    background: #3b679e;
+    background: -webkit-radial-gradient(#5f97b2 50%, #e0e7ed 80%, #284a7c 110%);
+    margin: 120px 500px 100px 500px;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+
+.inputs {
+    padding: 50px 30px 25px;
+    margin: 120px 100px 30px 100px;
+    border: solid 1px #fff;
+    height: 270px;
+    width: 320px;
+    border-radius: 4px;
+    box-shadow: 0 0 2px;
+    position: relative;
+    top: -40px;
+    left: -15px;
+}
+
+input[type=text] {
+    display: block;
+    padding: 10px 10px 10px 40px;
+    width: 300px;
+    height: 50px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    margin: 0px 10px 0px 10px;
+}
+
+svg {
+    color: rgba(000, 000, 000, 0.5);
+    transform: translate(20px, 40px);
+}
+
+input[type=text]:focus {
+    border: solid 2px #3b679e;
+    box-shadow: 2px 8px #3b679e;
+}
+
+input[type=password] {
+    display: block;
+    padding: 10px 10px 10px 40px;
+    width: 300px;
+    height: 50px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    margin: 0px 10px 0px 10px;
+}
+
+input[type=password]:focus {
+    border: solid 2px #3b679e;
+    box-shadow: 2px 8px #3b679e;
+}
+
+#button {
+    background-color: #0369B6;
+    height: 40px;
+    width: 300px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+}
+
+#button:hover {
+    color: #5f97b2;
+    text-shadow: 2px #fff;
+    background: #3b679e;
+}
+
+#button:focus {
+    border: solid 2px #3b679e;
+}
+
+input.endOfForm {
+    display: inline-block;
+    color: #35648B;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.endOfForm {
+    color: #244766;
+    display: inline-block;
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    transform: translate (-50%, -50%);
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.checkbox {
+    color: #244766;
+    position: relative;
+    left: 10%;
+    cursor: pointer;
+}
+
+.checkbox:hover {
+    color: #5f97b2;
+    text-shadow: 2px 2px 8px #fff;
+}
+
+.endOfForm a {
+    text-decoration: none;
+    position: relative;
+    left: 30%;
+    color: #244766;
+}
+
+.endOfForm a:hover {
+    color: #5f97b2;
+    text-shadow: 2px 2px 8px #fff;
+}
+
+div.checkmark {
+    background-color: #244766;
+    color: #fff;
+}
+
+.footer {
+    font-size: 12px;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0px;
+    display: inline-block;
+    position: relative;
+    top: 165px;
+    left: 50px;
+}
+
+p {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    color: red;
+    font-size: 40px;
+}
+
+#camera {
+    width: 120px;
+    height: 120px;
+    background: rgb(56, 102, 145);
+    border-radius: 100px;
+    margin: 0;
+    position: absolute;
+    top: 50px;
+    left: 225px;
+    z-index: -1;
+    font-size: 50px;
+}
+
+#camera svg {
+    position: absolute;
+    top: -15px;
+    left: 5px;
+}
+
+#error {
+    color: #ee0000;
+}
+
+#succed {
+    color: #00ee00;
+}

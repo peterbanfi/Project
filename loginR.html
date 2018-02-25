@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/loginR.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <form id="form">
+            <div id="camera">
+                <i class="fas fa-camera fa-lg"></i>
+            </div>
+            <div class="inputs">
+                <i class="fas fa-user"></i>
+                <input id="username" name="userName" type="text" placeholder="Username" required>
+                <i class="fas fa-lock"></i>
+                <input id="password" name="password" type="password" placeholder="*********" required>
+                <span id="usernotif"></span>
+                <span id="passnotif"></span>
+                <input type="button" id="button" value="LOGIN">
+                <div class="endOfForm">
+                    <label for="rememberme" class="checkbox">
+                        <input type="checkbox" name="rememberMe" id="rememberme" checked> Remember me
+                        <span class="checkmark"></span>
+                    </label>
+                    <a href="" alt="_blank" value="Forgot Password" id="forgot">Forgot Paasword?</a>
+                </div>
+                <div class="footer">
+                    Copyright © 2018 Your Brand Name, Inc
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="js/loginR.js"></script>
+</body>
+
+</html>
