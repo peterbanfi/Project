@@ -83,17 +83,61 @@ function tableBnCon(elders) {
     document.querySelector('#tablazat').innerHTML = table;
 }
 //tO NEM JÓ
+var evek = [];
+var honapok = [];
+var napok = [];
+
 function threeOldest(data) {
-    var evek = [];
+
     var elders = data.filter(function (i) {
         var bday = new Date(i.birthdate);
         var year = bday.getFullYear();
+        var month = bday.getMonth();
+        switch (month) {
+            case 0:
+                honapok.push("Január");
+                break;
+            case 1:
+                honapok.push("Február");
+                break;
+            case 2:
+                honapok.push("Március");
+                break;
+            case 3:
+                honapok.push("Április");
+                break;
+            case 4:
+                honapok.push("Május");
+                break;
+            case 5:
+                honapok.push("Június");
+                break;
+            case 6:
+                honapok.push("Július");
+                break;
+            case 7:
+                honapok.push("Augusztus");
+                break;
+            case 8:
+                honapok.push("Szeptember");
+                break;
+            case 9:
+                honapok.push("Október");
+                break;
+            case 10:
+                honapok.push("November");
+                break;
+            case 11:
+                honapok.push("December");
+                break;
+        }
+        var day = bday.getDay();
         evek.push(year);
+        napok.push(day);
     });
     evek.sort(function (a, b) {
         return a - b
     });
-    console.log(evek);
     tabletOHead()
     tabletOCon(data)
 }
@@ -103,7 +147,7 @@ function tabletOHead() {
     tableHead += `
     <tr>
         <td>Vezetéknév</td>
-        <td>Keresztknév</td>
+        <td>Keresztnév</td>
         <td>Születési dátum</td>
     </tr>`
     tableHead += '</thead>';
@@ -117,7 +161,7 @@ function tabletOCon(userDatas) {
         <tr>
         <td>${userDatas[i].firstname}</td>
         <td>${userDatas[i].lastname}</td>
-        <td>${userDatas[i].birthday}</td>
+        <td>${evek[i]} ${honapok[i]} ${napok[i]}</td>
         </tr>`;
     }
     table += '</tbody>';
@@ -240,6 +284,7 @@ function stat(userDatas) {
     var date = new Date();
     var yearNow = date.getFullYear();
     var ossz = 0;
+    document.getElementById("statsStyle").style.border = "1px solid #ffffff";
     userDatas.sort(function (first, second) {
         var korF = new Date(first.birthdate);
         var korS = new Date(second.birthdate);
