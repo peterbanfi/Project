@@ -1,0 +1,147 @@
+body {
+    margin: 20px 0%;
+    box-sizing: border-box;
+    font-family: 'Padauk', sans-serif;
+    background-color: #ccd9ff
+}
+
+.container {
+    box-sizing: border-box;
+    position: relative;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(to top right, #33ccff 0%, #0033cc 100%, #33ffff 0%, #33ccff);
+}
+
+#login-form {
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 300px;
+    height: 240px;
+    border: 1px solid #ddddcc;
+    border-radius: 10px;
+    padding: 60px 15px;
+}
+
+.container p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px 5px;
+}
+
+.container input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    outline: 0;
+    padding: 11px;
+    font-family: inherit;
+    border-width: 0;
+    border-radius: 3px;
+    background-position: 5px 5px;
+    background-size: 11%;
+    background-repeat: no-repeat;
+}
+
+.container input[type="text"] {
+    background-image: url('../IMG/user.png');
+    text-indent: 30px;
+}
+
+.container input[type="password"] {
+    background-image: url('../IMG/lock.png');
+    text-indent: 30px;
+}
+
+.container p#copy {
+    position: absolute;
+    font-size: 0.6em;
+    color: white;
+    margin: 340px 165px;
+}
+
+.container input[type="button"] {
+    background-color: #0033ccbb;
+    padding: 8px;
+    color: white;
+    font-size: 0.6em;
+    margin-top: 10px;
+}
+
+.container input[type="button"]:hover {
+    background-color: #1a52f8ef;
+    cursor: pointer;
+}
+
+.container input[type="checkbox"] {
+    position: absolute;
+    display: inline;
+    width: auto;
+    top: 205px;
+    left: 40px;
+}
+
+label {
+    position: absolute;
+    font-size: 0.7em;
+    color: black;
+    top: 210px;
+    left: 60px;
+}
+
+p#forgot {
+    position: absolute;
+    font-size: 0.7em;
+    color: black;
+    text-decoration: none;
+    font-style: italic;
+    right: 40px;
+    top: 205px;
+}
+
+p#forgot:hover {
+    cursor: pointer;
+}
+
+p#error,
+p#error2 {
+    position: absolute;
+    top: 250px;
+    left: 145px;
+    color: red;
+    font-size: 0.8em;
+    font-weight: bolder;
+}
+
+p#error {
+    top: 250px;
+    left: 120px;
+    font-size: 0.7em;
+}
+
+p#success {
+    position: absolute;
+    top: 250px;
+    left: 120px;
+    color: #0cf333;
+    font-size: 0.8em;
+    font-weight: bolder;
+}
+
+.icon {
+    position: absolute;
+    background-color: #334474;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: white;
+    font-size: 45px;
+    top: 55px;
+    left: 200px;
+    z-index: 1;
+    text-align: center;
+    line-height: 2.1;
+}
