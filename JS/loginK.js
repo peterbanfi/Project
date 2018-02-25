@@ -63,6 +63,7 @@ if (belepesiKiserlet < 3) {
             if (users[i].email == userName && users[i].password == passUser) {
                 document.getElementById("success").innerHTML = `Belépve ${users[i].email}`;
                 belepve = true;
+                window.open("adminK.html", "_blank");
             }
         }
         if (belepve == false) {
