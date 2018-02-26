@@ -40,14 +40,32 @@ input {
     display: block;
 }
 
+.fa-user {
+    position: absolute;
+    color: grey;
+    top: 127px;
+    left: 58px;
+    z-index: 1;
+}
+
+.fa-lock {
+    position: absolute;
+    color: grey;
+    font-size: 24px;
+    top: 175px;
+    left: 58px;
+    z-index: 1;
+}
+
 input[type="text"],
 input[type="password"] {
-    width: 300px;
+    width: 270px;
     height: 30px;
     position: relative;
     top: 120px;
     margin-bottom: 10px;
     left: 50px;
+    padding-left: 30px;
 }
 
 input[type="button"] {
