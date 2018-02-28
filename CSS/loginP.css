@@ -7,12 +7,11 @@ body {
     width: 600px;
     height: 600px;
     position: relative;
-    margin: 0 auto;
-    /* Ez a háttér az eredeti képhez hasonló
+    margin: auto auto;
+    /* Ez a háttér az eredeti képhez hasonló, de az indexhez nem passzol:
     background: linear-gradient(330deg, rgba(11, 11, 70, 0.87), rgba(51, 155, 216, 0.925), rgba(11, 11, 70, 0.904)); */
     background: linear-gradient(330deg, rgb(0, 58, 92), rgb(111, 195, 216), rgb(0, 58, 92));
-    top: 50%;
-    transform: translateY(30%);
+    transform: translate( 0, 30%);
     box-shadow: 0 0 20px black;
 }
 
@@ -65,6 +64,16 @@ input {
     margin: 4px;
     font-size: 16px;
     padding-left: 10px;
+    box-shadow: 0 0 0 white;
+    transition: box-shadow .6s;
+}
+
+input:hover {
+    box-shadow: 0 0 20px white;
+}
+
+input:nth-child(7):hover {
+    box-shadow: 0 0 0 white;
 }
 
 a {
@@ -96,10 +105,13 @@ a:hover {
     top: 50px;
     left: 125px;
     margin: 0;
+    box-shadow: 0 0 0 white;
+    transition: box-shadow 1s;
 }
 
 #icon:hover {
     cursor: pointer;
+    box-shadow: 0 0 25px white;
 }
 
 svg {
