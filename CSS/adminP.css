@@ -1,6 +1,5 @@
 html {
     background: linear-gradient(600deg, rgb(0, 58, 92), rgb(111, 195, 216));
-    ;
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
@@ -9,12 +8,27 @@ html {
 body {
     width: 100%;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', sans-serif;
+    overflow: hidden;
 }
 
 .buttons {
     margin: 0 auto;
     width: 1100px;
+}
+
+#container h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 15px white;
+    transition: text-shadow 1s;
+    margin-bottom: 5px;
+    letter-spacing: 10px;
+}
+
+#container h1:hover {
+    cursor: pointer;
+    text-shadow: 0 0 25px black;
 }
 
 .buttons p {
@@ -48,6 +62,7 @@ input:hover {
 table {
     margin: 0 auto;
     width: 1400px;
+    border-collapse: collapse;
 }
 
 thead td {
@@ -60,8 +75,13 @@ thead td {
     font-size: 16px;
 }
 
+thead td:hover {
+    cursor: default;
+}
+
 tbody tr {
     text-align: center;
+    transition: background, color 1s;
 }
 
 tbody {
@@ -71,10 +91,10 @@ tbody {
 
 tbody td {
     border: 1px solid rgb(0, 0, 0);
-    transition: background, color 1s;
+    font-size: 14px;
 }
 
-tbody td:hover {
+tbody tr:hover {
     background: rgb(0, 136, 204);
     color: white;
     cursor: default;
@@ -93,4 +113,75 @@ tbody td:hover {
     position: relative;
     top: 90px;
     left: 180px;
+}
+
+#info {
+    position: absolute;
+    top: 10px;
+    right: 320px;
+    word-spacing: 20px;
+    color: white;
+    display: block;
+}
+
+#info a:nth-child(3) {
+    word-spacing: 0px;
+}
+
+#info a {
+    color: white;
+}
+
+#info a:hover {
+    text-shadow: 0 0 10px white;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+    word-spacing: 0;
+}
+
+.dropdown:hover {}
+
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: white;
+    padding-left: 14px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    border: 1px solid rgb(245, 245, 245);
+    border-radius: 3px;
+    min-width: 121px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    word-spacing: 0;
+    padding: 6px;
+}
+
+.dropdown-content a:hover {
+    text-shadow: 0 0 10px white;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
 }

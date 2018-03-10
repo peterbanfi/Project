@@ -5,12 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Nunito" rel="stylesheet">
     <link rel="stylesheet" href="css/adminP.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <title>Admin P</title>
 </head>
 
 <body>
+
     <div id="container">
+        <div id="info">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="comingsoon.html">Coming Soon</a>
+            <a href="404.html">404</a>
+            <div class="dropdown">
+                <a href="index.html" class="dropbtn">More</a>
+                <i class="fa fa-caret-down"></i>
+                <div class="dropdown-content" id="iconP">
+                    <a href="loginP.html">Peti Login</a>
+                    <a href="loginO.html">Olivér Login</a>
+                    <a href="loginR.html">Réka Login</a>
+                    <a href="loginK.html">Kinga Login</a>
+                    <a href="loginZs.html">Zsombor Login</a>
+                </div>
+            </div>
+        </div>
+        <h1 id="reset">ADMIN PAGE</h1>
         <div class="buttons">
             <p>1990 előttiek
                 <input type="button" id="bN" onclick="beforeNinety()" value="Mehet!">
@@ -19,7 +41,7 @@
                 <input type="button" id="tO" onclick="threeOldest()" value="Mehet!">
             </p>
             <p>Szűrt nevek
-                <input type="button" onclick="sort()" value="Mehet!">
+                <input type="button" id="s" onclick="sort()" value="Mehet!">
             </p>
             <p>Városok
                 <input type="button" id="cOA" onclick="cities()" value="Mehet!">
