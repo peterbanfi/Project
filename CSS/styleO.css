@@ -8,6 +8,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 1000px;
+    text-align: justify;
 }
 
 .oliver .oegy .box {
@@ -39,25 +40,18 @@
 
 .oliver .oketto {
     position: relative;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
     width: 1000px;
-}
-
-.oliver .half {
-    display: inline-block;
-    width: 50%;
-    height: 100%;
-    margin-left: -3px;
+    min-height: 500px;
 }
 
 .oliver .oketto .box {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50%;
+    transform: translateY(40%);
     line-height: 22px;
+    min-height: 500px;
+    max-width: 400px;
+    text-align: justify;
 }
 
 .oliver .oketto h3 {
@@ -67,11 +61,10 @@
 
 .oliver .oketto .img {
     display: inline-block;
-    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-0%) translateY(-50%);
     padding-left: 50px;
+    margin: 75px 0;
 }
 
 .oliver .oketto img {
@@ -80,19 +73,18 @@
 
 .oliver .oharom {
     position: relative;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
     width: 1000px;
+    min-height: 500px;
 }
 
 .oliver .oharom .box {
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-0%) translateY(-50%);
-    line-height: 25px;
+    transform: translateY(30%);
+    line-height: 22px;
+    min-height: 500px;
+    max-width: 400px;
+    text-align: justify;
 }
 
 .oliver .oharom h3 {
@@ -101,12 +93,16 @@
     line-height: 35px;
 }
 
-.oliver .oharom img {
+.oliver .oharom .img {
     display: inline-block;
-    position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    box-shadow: 0px 0px 15px 0px #888888
+    left: 50%;
+    padding-left: 50px;
+    margin: 75px 0;
+}
+
+.oliver .oharom img {
+    box-shadow: 0px 0px 15px 0px #888888;
 }
 
 .oliver .onegy {
@@ -114,18 +110,16 @@
 }
 
 .oliver .filter {
-    height: 100%;
-    width: 100%;
     background-color: rgba(27, 97, 123, 0.75);
 }
 
 .oliver .onegy .box {
-    width: 1000px;
     font-style: italic;
     margin: auto;
     padding: 100px 0 120px 0px;
     text-align: center;
     color: white;
+    width: 50%;
 }
 
 .oliver .onegy .box .szoveg {
@@ -144,7 +138,7 @@
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    width: 1000px;
+    max-width: 1000px;
     padding-top: 90px;
     padding-bottom: 90px;
 }
@@ -163,38 +157,38 @@
     padding-top: 30px;
 }
 
-.extra1 form {
-    position: absolute;
-    top: 250px;
-    left: 200px;
-}
+.extra1 form {}
 
 .extra1 input[type="text"] {
     height: 38px;
-    width: 450px;
+    width: 45%;
     font-size: 15px;
     border: none;
+    margin-left: 20%;
     border-top-left-radius: 25px;
+    padding-left: 5%;
     border-bottom-left-radius: 25px;
+    outline: none;
 }
 
 .extra1 input[type="button"] {
     margin-left: -4px;
     height: 40px;
-    width: 150px;
+    width: 15%;
     color: white;
     background: #113847;
     border: none;
     font-size: 20px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+    outline: none;
 }
 
 .extra2 {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    width: 1000px;
+    max-width: 1000px;
     padding-top: 90px;
     padding-bottom: 190px;
 }
@@ -207,18 +201,19 @@
     margin-bottom: 30px;
 }
 
-.extra2 form {
-    position: absolute;
-    top: 200px;
-    left: 240px;
-}
+.extra2 form {}
 
 .extra2 input[type="button"] {
     height: 40px;
-    width: 250px;
+    width: 25%;
     color: white;
     background: #21728f;
     border: none;
     font-size: 20px;
     border-radius: 25px;
+    outline: none;
+}
+
+.extra2 input[type="button"]:first-child {
+    margin-left: 25%;
 }

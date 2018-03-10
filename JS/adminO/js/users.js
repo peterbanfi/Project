@@ -26,7 +26,20 @@ function successAjax(xhttp) {
     */
     createHead(head, icons);
     createContent(userDatas, headline);
-    stat(userDatas)
+    stat(userDatas);
+    $('input').animate({
+        height: '40px',
+        width: '10%',
+        margin: '1%'
+    }, 6500);
+    $('p').animate({
+        fontSize: '30px',
+        width: '50%',
+        marginLeft: '25%'
+    }, 3000);
+    $('table').slideDown(1000);
+    $('form').fadeIn(5000);
+
     document.querySelectorAll('input')[0].addEventListener('click', function () {
         button1(userDatas)
     });
@@ -45,7 +58,6 @@ function successAjax(xhttp) {
 }
 
 getData('js/adminO/js/users.json', successAjax);
-
 // Live servert használd mindig!!!!!
 /* IDE ÍRD A FÜGGVÉNYEKET!!!!!! NE EBBE AZ EGY SORBA HANEM INNEN LEFELÉ! */
 var head = ["Azonosító", "Felhasználónév", "Jelszó", "Vezetéknév", "Keresztnév", "Ország", "Állam/Megye",
@@ -65,6 +77,9 @@ function createHead(headdata, icons) {
         th.innerHTML = `<i class="material-icons">${icons[i]}</i><br>` + headdata[i];
         document.querySelector('thead').appendChild(th);
     }
+    $('th').animate({
+        opacity: 1
+    }, 1500);
 }
 
 function createContent(data, headline) {
@@ -78,7 +93,9 @@ function createContent(data, headline) {
             td.textContent = data[i][headline[j]];
             tr.appendChild(td);
         }
+
     }
+
 }
 
 function resetTable() {
