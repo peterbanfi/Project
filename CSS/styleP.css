@@ -123,22 +123,18 @@ img {
 
 .fa-facebook-f:hover {
     color: #4867AA;
-    text-decoration: none;
 }
 
 .fa-youtube:hover {
     color: #FF0000;
-    text-decoration: none;
 }
 
 .fa-dribbble:hover {
     color: #DF3E7B;
-    text-decoration: none;
 }
 
 .fa-vimeo-v:hover {
     color: #172322;
-    text-decoration: none;
 }
 
 #loginModalP:hover {
@@ -148,18 +144,34 @@ img {
 
 /* Modal Login */
 
+.modal-content {
+    background: transparent;
+}
+
+.modal-body {
+    background: transparent;
+    padding: 0;
+}
+
 #center {
     position: relative;
     margin: 0 0;
-    top: 50px;
-    left: 120px;
-    width: 380px;
+    left: 0px;
+    width: 598px;
+    background: linear-gradient(600deg, rgb(0, 58, 92), rgba(111, 195, 216, 0.747));
+    border-radius: 10px;
+}
+
+#center:hover {
+    background: linear-gradient(600deg, rgb(0, 58, 92), rgb(111, 195, 216));
 }
 
 #border {
+    position: relative;
+    left: 130px;
     border: 1px solid white;
     border-radius: 10px;
-    width: 260px;
+    width: 340px;
     padding: 50px;
 }
 
@@ -180,7 +192,7 @@ img {
 
 #login {
     height: 30px;
-    width: 255px;
+    width: 245px;
     border: none;
     text-align: center;
     color: white;
@@ -209,16 +221,6 @@ input:nth-child(7):hover {
     box-shadow: 0 0 0 white;
 }
 
-/* a {
-    font-size: 15px;
-    font-style: italic;
-    color: black;
-    text-decoration: none;
-   */
-
-margin-left: 10px;
-}
-
 a:hover {
     text-shadow: 0 0 10px rgb(255, 255, 255);
 }
@@ -227,7 +229,7 @@ a:hover {
     font-size: 14px;
     font-weight: 100;
     position: relative;
-    left: 50px;
+    left: 160px;
     color: white;
 }
 
@@ -238,10 +240,11 @@ a:hover {
     position: relative;
     border-radius: 50px;
     top: 50px;
-    left: 125px;
+    left: 245px;
     margin: 0;
     box-shadow: 0 0 0 white;
     transition: box-shadow 1s;
+    z-index: 100;
 }
 
 #icon-2:hover {
@@ -249,12 +252,14 @@ a:hover {
     box-shadow: 0 0 25px white;
 }
 
-/* svg {
+#icon-3 {
     position: absolute;
     top: 20px;
     left: 20px;
     color: white;
-} */
+    width: 60px;
+    height: 60px;
+}
 
 .fa-lg {
     font-size: 60px;
