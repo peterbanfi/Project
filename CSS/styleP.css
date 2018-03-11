@@ -21,24 +21,10 @@ body {
     background-color: rgba(0, 0, 0, 0.13);
 }
 
-*/ #download input {
-    border: none;
-    background: white;
-    padding: 10px 15px;
-    border-radius: 20px;
-    color: rgb(67, 150, 170);
-    font-weight: bold;
-}
-
-#download input:hover {
-    color: white;
-    background: rgb(67, 150, 170);
-    cursor: pointer;
-}
-
 footer {
     border-top: 1px solid rgb(199, 199, 199);
     position: relative;
+    text-decoration: none;
 }
 
 h1,
@@ -96,7 +82,6 @@ img {
 
 #copy {
     position: absolute;
-    left: 250px;
     color: grey;
 }
 
@@ -127,27 +112,178 @@ img {
     margin-top: 16px;
     margin-bottom: 16px;
     top: 0;
-    right: 250px;
     color: grey;
     word-spacing: 10px;
 }
 
 .fa-twitter:hover {
     color: #1DA1F2;
+    text-decoration: none;
 }
 
 .fa-facebook-f:hover {
     color: #4867AA;
+    text-decoration: none;
 }
 
 .fa-youtube:hover {
     color: #FF0000;
+    text-decoration: none;
 }
 
 .fa-dribbble:hover {
     color: #DF3E7B;
+    text-decoration: none;
 }
 
 .fa-vimeo-v:hover {
     color: #172322;
+    text-decoration: none;
+}
+
+#loginModalP:hover {
+    cursor: pointer;
+    color: black;
+}
+
+/* Modal Login */
+
+#center {
+    position: relative;
+    margin: 0 0;
+    top: 50px;
+    left: 120px;
+    width: 380px;
+}
+
+#border {
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 260px;
+    padding: 50px;
+}
+
+#username {
+    height: 30px;
+    width: 245px;
+    border: none;
+    border-radius: 2px;
+}
+
+#password {
+    height: 30px;
+    width: 245px;
+    border: none;
+    border-radius: 2px;
+    letter-spacing: 2px;
+}
+
+#login {
+    height: 30px;
+    width: 255px;
+    border: none;
+    text-align: center;
+    color: white;
+    background: rgb(67, 150, 170);
+    font-size: 12px;
+}
+
+.login::before {
+    font-weight: 900;
+    content: "\f007";
+}
+
+input {
+    margin: 4px;
+    font-size: 16px;
+    padding-left: 10px;
+    box-shadow: 0 0 0 white;
+    transition: box-shadow .6s;
+}
+
+input:hover {
+    box-shadow: 0 0 20px white;
+}
+
+input:nth-child(7):hover {
+    box-shadow: 0 0 0 white;
+}
+
+/* a {
+    font-size: 15px;
+    font-style: italic;
+    color: black;
+    text-decoration: none;
+   */
+
+margin-left: 10px;
+}
+
+a:hover {
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+#copy-2 {
+    font-size: 14px;
+    font-weight: 100;
+    position: relative;
+    left: 50px;
+    color: white;
+}
+
+#icon-2 {
+    width: 100px;
+    height: 100px;
+    background: rgb(67, 150, 170);
+    position: relative;
+    border-radius: 50px;
+    top: 50px;
+    left: 125px;
+    margin: 0;
+    box-shadow: 0 0 0 white;
+    transition: box-shadow 1s;
+}
+
+#icon-2:hover {
+    cursor: pointer;
+    box-shadow: 0 0 25px white;
+}
+
+/* svg {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+} */
+
+.fa-lg {
+    font-size: 60px;
+}
+
+span {
+    color: red;
+}
+
+p {
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+}
+
+input:hover {
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+#userIcon {
+    position: relative;
+    top: 30px;
+    left: 230px;
+    color: grey;
+}
+
+#passwordIcon {
+    position: relative;
+    top: 30px;
+    left: 230px;
+    color: grey;
 }

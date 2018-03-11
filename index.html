@@ -57,7 +57,7 @@
                                     </button>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                         <li>
-                                            <a href="loginP.html">Peti Login</a>
+                                            <a id="loginModalP" data-toggle="modal" data-target="#myModalP">Peti Login</a>
                                         </li>
                                         <li>
                                             <a href="loginO.html">Olivér Login</a>
@@ -232,33 +232,90 @@
         </div>
     </div>
     <footer>
-        <div class="footer">
-            <div id="copy">
-                <p>Copyright &copy; 2018</p>
-            </div>
-            <div id="social">
-                <a href="https://twitter.com/?lang=en">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.facebook.com/">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.youtube.com/">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a href="https://dribbble.com/">
-                    <i class="fab fa-dribbble"></i>
-                </a>
-                <a href="https://vimeo.com/join">
-                    <i class="fab fa-vimeo-v"></i>
-                </a>
+        <div class="oketto row">
+            <div class="col-md-3 col-md-offset-3">
 
+                <div class="box">
+                    <div id="copy">
+                        <p>Copyright &copy; 2018</p>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="col-md-3 col-md-offset-3">
+
+                <div class="box">
+                    <div id="social">
+                        <a href="https://twitter.com/?lang=en" data-toggle="tooltip" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/" data-toggle="tooltip" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" data-toggle="tooltip" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://dribbble.com/" data-toggle="tooltip" title="Dribble">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                        <a href="https://vimeo.com/join" data-toggle="tooltip" title="Vimeo">
+                            <i class="fab fa-vimeo-v"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <!--   LOGIN Modal  -->
+
+            <div class="modal fade" id="myModalP" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="center">
+                                <div id="icon-2" onclick="home()">
+                                    <i class="fas fa-camera-retro fa-lg"></i>
+                                </div>
+                                <div id="border">
+                                    <div id="inputs">
+
+                                        <i class="fas fa-user" id="userIcon"></i>
+                                        <input type="text" id="username" placeholder="Username">
+
+                                        <i class="fas fa-lock" id="passwordIcon"></i>
+                                        <input type="password" id="password" placeholder="*********">
+
+                                        <span id="success"></span>
+                                        <span id="error"></span>
+
+                                        <input type="button" id="login" onclick="login()" value="LOGIN">
+                                    </div>
+                                    <p>
+                                        <input type="checkbox" name="remember" id="remember" checked>Remember Me</p>
+                                    <a href="" id="forgot" onclick="forgot()">Forgot Password?</a>
+                                </div>
+                                <div id="copy-2">
+                                    <p>
+                                        Copyright &copy; 2018 Your Brand Name, Inc
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
     </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/JS/bootstrap.min.js"></script>
+    <script src="/JS/index.js"></script>
+    <script src="/JS/loginP.js"></script>
 </body>
 
 </html>
