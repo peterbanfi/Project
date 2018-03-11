@@ -1,118 +1,186 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/styleP.css">
-    <link rel="stylesheet" href="CSS/styleR.css">
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="/CSS/styleP.css">
+    <link rel="stylesheet" href="/CSS/styleR.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Nunito" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <title>Contact</title>
 
+
+    <title>Document</title>
 </head>
 
 <body>
-    <main>
+    <div class="main">
+        <header>
+        </header>
+        <main>
+            <div id="background">
+                <div class="peti">
+                    <div class="oketto row">
+                        <div class="col-xs-12 col-sm-6">
 
-        <div id="background">
-            <div class="peti">
-                <div id="info">
-                    <a href="contact.html">Contact</a>
-                    <a href="comingsoon.html">Coming Soon</a>
-                    <a href="404.html">404</a>
-                </div>
-                <div class="p-head">
-                    <img src="IMG/phone.png" alt="phone" title="phone" id="phone">
-                    <div id="p-content">
-                        <a href="index.html">
-                            <h3>APPLICATION</h3>
-                        </a>
-                        <h1>Edit Your Photos and Share with Community</h1>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Ut emin ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea commodo consequat.
-                        </p>
-                        <div id="download">
-                            <input type="button" name="downloadios" id="downloadios" value="Download for IOS">
-                            <input type="button" name="downloadandroid" id="downloadandroid" value="Download for Android">
+                            <div class="box">
+                                <div id="phone" class="carousel slide col-md-3 col-md-offset-3" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img src="/IMG/phone.png" alt="phone" title="phone" style="width:100%;">
+                                        </div>
+                                        <div class="item">
+                                            <img src="/IMG/phone2.png" alt="phone" title="phone" style="width:100%;">
+                                        </div>
+                                        <div class="item">
+                                            <img src="/IMG/phone3.png" alt="phone" title="phone" style="width:100%;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
+                        <div class="box">
+                            <div id="info">
+                                <a href="contact.html">Contact</a>
+                                <a href="comingsoon.html">Coming Soon</a>
+                                <a href="404.html">404</a>
+                                <div class="dropdown">
+                                    <button href="index.html" class="btn btn-default btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="true">
+                                        More
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li>
+                                            <a id="loginModalP" data-toggle="modal" data-target="#myModalP">Peti Login</a>
+                                        </li>
+                                        <li>
+                                            <a href="loginO.html">Olivér Login</a>
+                                        </li>
+                                        <li>
+                                            <a href="loginR.html">Réka Login</a>
+                                        </li>
+                                        <li>
+                                            <a href="loginK.html">Kinga Login</a>
+                                        </li>
+                                        <li>
+                                            <a href="loginZs.html">Zsombor Login</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="p-head">
+                                    <div id="p-content">
+                                        <a href="index.html">
+                                            <h3>APPLICATION</h3>
+                                        </a>
+                                        <h1>Edit Your Photos and Share with Community</h1>
+
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                            ut labore et dolore magna aliqua. Ut emin ad minim veniam, quis nostrud exercitation
+                                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        </p>
+                                        <div id="download">
+                                            <input class="btn btn-primary" type="button" name="downloadios" id="downloadios" value="Download for IOS">
+                                            <input class="btn btn-primary" type="button" name="downloadandroid" id="downloadandroid" value="Download for Android">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+    </div>
+    </main>
+    <div class="container reka">
+        <div class="row">
+            <div class="col-xs-12 col-md-8 container1">
+                <form action="">
+                    <h3>Contact</h3>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="form-control" id="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your email</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" rows="10" type="text" id="message"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary active">Send</button>
+
+                </form>
+            </div>
+            <div class="col-xs-6 col-md-4 container2">
+                <h4>Have some question? Send message here or call us. We are here to help you.</h4>
+                <div></div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed Totam, nisi autem iusto quasi distinctio ratione
+                    hic voluptas facere voluptatem.</p>
+                <p>Nihil possimus dolor, sint repudiandae odio quibusdam! Consequatur mollitia laborum necessitatibus. Lorem,
+                    ipsum.
+                </p>
+                <address>
+                    <strong>Phone:</strong> 123 456 789
+                </address>
+                <address>
+                    <strong>Email:</strong>
+                    <a href="mailto:#">office@example.com</a>
+                </address>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="oketto row">
+            <div class="col-md-3 col-md-offset-3">
+
+                <div class="box">
+                    <div id="copy">
+                        <p>Copyright &copy; 2018</p>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="col-md-3 col-md-offset-3">
 
-        <div class="reka">
-            <div class="container1">
-                <form action='mailto:contact@example.com' method='post'>
-                    <h3>Contact</h3>
-                    <br>
-                    <label>Name</label>
-                    <br>
-                    <input name="name" type="text" required>
-                    <br>
-                    <label>Subject</label>
-                    <br>
-                    <input name="subject" type="text" required>
-                    <br>
-                    <label>Your email</label>
-                    <br>
-                    <input name="yourEmail" type="email" required>
-                    <br>
-                    <label>Message</label>
-                    <br>
-                    <textarea name="yourEmail" required></textarea>
-                    <br>
-                    <input type="submit" value="Send">
-                </form>
-            </div>
-            <div class="container2">
-                <div class="aside">
-                    <h4>Have some question? Send message here or call us. We are here to help you.</h4>
-                    <br>
-                    <p id="elso">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed Totam, nisi autem iusto quasi distinctio
-                        ratione hic voluptas facere voluptatem.</p>
-                    <br>
-                    <p id="masodik">Nihil possimus dolor, sint repudiandae odio quibusdam! Consequatur mollitia laborum necessitatibus. Lorem,
-                        ipsum.
-                    </p>
-                    <br>
-                    <a href="tel:123456789">
-                        <span style="color: #000;font-weight:bold">Phone:</span> 123 456 789</a>
-                    <br>
-                    <a href="mailto:office@example.com">
-                        <span style="color:#000;font-weight:bold">email:</span> office@example.com</a>
+                <div class="box">
+                    <div id="social">
+                        <a href="https://twitter.com/?lang=en" data-toggle="tooltip" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/" data-toggle="tooltip" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" data-toggle="tooltip" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://dribbble.com/" data-toggle="tooltip" title="Dribble">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                        <a href="https://vimeo.com/join" data-toggle="tooltip" title="Vimeo">
+                            <i class="fab fa-vimeo-v"></i>
+                        </a>
+
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
-    <footer>
-        <div class="footer">
-            <div id="copy">
-                <p>Copyright &copy; 2018</p>
-            </div>
-            <div id="social">
-                <a href="https://twitter.com/?lang=en">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.facebook.com/">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.youtube.com/">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a href="https://dribbble.com/">
-                    <i class="fab fa-dribbble"></i>
-                </a>
-                <a href="https://vimeo.com/join">
-                    <i class="fab fa-vimeo-v"></i>
-                </a>
-
-            </div>
-        </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/JS/bootstrap.min.js"></script>
+    <script src="/JS/npm.js"></script>
+    <script src="/JS/index.js"></script>
+
 </body>
 
 </html>
+<form>

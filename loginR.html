@@ -3,44 +3,62 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="css/loginR.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="/CSS/fonts/glyphicons-halflings-regular.woff2">
+    <link rel="stylesheet" href="/CSS/loginR.css">
 
 
+
+
+    <title>Document</title>
 </head>
 
 <body>
     <div class="container">
+        <div class="row">
+            <div class="col-xs-4">
+                <div class="modal fade" id="loginR" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-body">
+                            <form class="loginform">
+                                <span class="glyphicon glyphicon-camera" style="font-size:80px"></span>
+                                <div class="form-group">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    <input type="text" class="form-control" id="userName" placeholder="Username">
+                                </div>
+                                <div class="form-group">
+                                    <span class="glyphicon glyphicon-lock"></span>
+                                    <input type="password" name="password" class="form-control" id="password" placeholder="*********">
+                                </div>
+                                <button type="button" class="btn btn-primary">Login</button>
 
-        <form id="form">
-            <div id="camera">
-                <i class="fas fa-camera fa-lg"></i>
-            </div>
-            <div class="inputs">
-                <i class="fas fa-user"></i>
-                <input id="username" name="userName" type="text" placeholder="Username" required>
-                <i class="fas fa-lock"></i>
-                <input id="password" name="password" type="password" placeholder="*********" required>
-                <span id="usernotif"></span>
-                <span id="passnotif"></span>
-                <input type="button" id="button" value="LOGIN">
-                <div class="endOfForm">
-                    <label for="rememberme" class="checkbox">
-                        <input type="checkbox" name="rememberMe" id="rememberme" checked> Remember me
-                        <span class="checkmark"></span>
-                    </label>
-                    <a href="" alt="_blank" value="Forgot Password" id="forgot">Forgot Paasword?</a>
-                </div>
-                <div class="footer">
-                    Copyright © 2018 Your Brand Name, Inc
+
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" checked>Remember me
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <a href="" id="forgot">Forgot Paasword?</a>
+                                </div>
+                                <div class="form-group">
+                                    <p> Copyright © 2018 Your Brand Name, Inc</p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </form>
+        </div>
     </div>
-    <script src="js/loginR.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="/JS/bootstrap.min.js"></script>
+    <script src="/JS/loginR.js"></script>
+
 </body>
 
 </html>
