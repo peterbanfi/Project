@@ -13,52 +13,15 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-.dropdown {
-    float: right;
-    overflow: hidden;
-    word-spacing: 0;
+.dropdown-menu {
+    background: transparent;
 }
 
-.dropdown:hover {}
-
-.dropdown .dropbtn {
-    border: none;
-    outline: none;
-    color: white;
-    padding-left: 14px;
-    background-color: inherit;
-    font-family: inherit;
-    /* Important for vertical align on mobile phones */
-    margin: 0;
-    /* Important for vertical align on mobile phones */
+.dropdown-menu a {
+    background-color: rgba(0, 0, 0, 0.13);
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: transparent;
-    border: 1px solid rgb(245, 245, 245);
-    border-radius: 3px;
-    min-width: 121px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    text-align: center;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content a {
-    word-spacing: 0;
-    padding: 6px;
-}
-
-.dropdown-content a:hover {
-    text-shadow: 0 0 10px white;
-}
-
-#download input {
+*/ #download input {
     border: none;
     background: white;
     padding: 10px 15px;
@@ -143,9 +106,8 @@ img {
 
 #p-content {
     display: inline-block;
-    width: 550px;
+    width: 520px;
     position: absolute;
-    right: 0;
     top: 50px;
 }
 
@@ -154,9 +116,10 @@ img {
 }
 
 #phone {
-    position: relative;
-    top: 50px;
-    left: 100px;
+    width: 280px;
+    position: absolute;
+    top: 34px;
+    left: -20px;
 }
 
 #social {
