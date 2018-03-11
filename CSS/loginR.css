@@ -1,191 +1,96 @@
-body {
-    background-color: rgb(0, 0, 0);
-    border-color: transparent;
-    font-family: Arial, Helvetica, sans-serif
+.modal-dialog {
+    border: solid 1px #fff;
+    position: relative;
+    top: 10%;
+    height: 70%;
+    background: #3b679e;
+    background: -webkit-radial-gradient(#5f97b2 50%, #e0e7ed 80%, #284a7c 110%);
 }
 
 form {
-    padding: 30px 10px 15px;
-    height: 550px;
-    width: 550px;
-    display: block;
-    background: #3b679e;
-    background: -webkit-radial-gradient(#5f97b2 50%, #e0e7ed 80%, #284a7c 110%);
-    margin: 120px 500px 100px 500px;
+    width: 500px;
+    height: 300px;
     position: absolute;
-    top: 35%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-}
-
-.inputs {
-    padding: 50px 30px 25px;
-    margin: 120px 100px 30px 100px;
+    top: 100px;
+    left: 50px;
     border: solid 1px #fff;
-    height: 270px;
-    width: 320px;
-    border-radius: 4px;
-    box-shadow: 0 0 2px;
-    position: relative;
-    top: -40px;
-    left: -15px;
 }
 
-input[type=text] {
-    display: block;
-    padding: 10px 10px 10px 40px;
-    width: 300px;
-    height: 50px;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    margin: 0px 10px 0px 10px;
-}
-
-svg {
-    color: rgba(000, 000, 000, 0.5);
-    transform: translate(20px, 40px);
-}
-
-input[type=text]:focus {
-    border: solid 2px #3b679e;
-    box-shadow: 2px 8px #3b679e;
-}
-
-input[type=password] {
-    display: block;
-    padding: 10px 10px 10px 40px;
-    width: 300px;
-    height: 50px;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    margin: 0px 10px 0px 10px;
-}
-
-input[type=password]:focus {
-    border: solid 2px #3b679e;
-    box-shadow: 2px 8px #3b679e;
-}
-
-#button {
-    background-color: #0369B6;
+.form-control {
+    padding-left: 30px;
+    margin: 10px;
+    width: 400px;
     height: 40px;
-    width: 300px;
-    color: #fff;
-    text-align: center;
+}
+
+[type=text] {
     position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: none;
+    top: 100px;
+    left: 40px;
 }
 
-#button:hover {
-    color: #5f97b2;
-    text-shadow: 2px #fff;
-    background: #3b679e;
+[type=password] {
+    position: absolute;
+    top: 150px;
+    left: 40px;
 }
 
-#button:focus {
-    border: solid 2px #3b679e;
+button {
+    width: 400px;
+    position: absolute;
+    top: 220px;
+    left: 50px;
 }
 
-input.endOfForm {
-    display: inline-block;
-    color: #35648B;
-    font-size: 10px;
-    cursor: pointer;
-}
-
-.endOfForm {
+a {
+    position: absolute;
+    top: 260px;
+    left: 280px;
     color: #244766;
     display: inline-block;
-    position: absolute;
-    top: 75%;
-    left: 10%;
-    transform: translate (-50%, -50%);
+}
+
+p {
     font-size: 12px;
-    font-weight: bold;
-    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 310px;
+    left: 130px;
 }
 
 .checkbox {
     color: #244766;
-    position: relative;
-    left: 10%;
-    cursor: pointer;
-}
-
-.checkbox:hover {
-    color: #5f97b2;
-    text-shadow: 2px 2px 8px #fff;
-}
-
-.endOfForm a {
-    text-decoration: none;
-    position: relative;
-    left: 30%;
-    color: #244766;
-}
-
-.endOfForm a:hover {
-    color: #5f97b2;
-    text-shadow: 2px 2px 8px #fff;
-}
-
-div.checkmark {
-    background-color: #244766;
-    color: #fff;
-}
-
-.footer {
-    font-size: 12px;
-    color: #fff;
-    text-transform: capitalize;
-    text-align: center;
-    margin: 0px;
     display: inline-block;
-    position: relative;
-    top: 165px;
-    left: 50px;
+    position: absolute;
+    top: 250px;
+    left: 80px;
 }
 
-p {
+.glyphicon-camera {
     position: absolute;
-    top: 10%;
-    left: 40%;
-    color: red;
-    font-size: 40px;
+    top: -45px;
+    left: 200px;
+    z-index: 1;
 }
 
-#camera {
-    width: 120px;
-    height: 120px;
-    background: rgb(56, 102, 145);
-    border-radius: 100px;
-    margin: 0;
+.glyphicon-user {
     position: absolute;
-    top: 50px;
-    left: 225px;
-    z-index: -1;
-    font-size: 50px;
+    top: 125px;
+    left: 60px;
+    z-index: 1;
+    color: rgba(0, 0, 0, 0.5);
 }
 
-#camera svg {
+.glyphicon-lock {
     position: absolute;
-    top: -15px;
-    left: 5px;
+    top: 170px;
+    left: 60px;
+    z-index: 1;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 #error {
-    color: #ee0000;
-}
-
-#succed {
-    color: #00ee00;
+    position: absolute;
+    top: 50px;
 }
