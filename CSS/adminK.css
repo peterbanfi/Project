@@ -1,4 +1,4 @@
-body {
+/*body {
     box-sizing: border-box;
     margin: 0%;
 }
@@ -66,4 +66,8 @@ p {
 
 span {
     font-weight: bolder;
+}*/
+
+#panel-body {
+    font-size: 0.8em;
 }

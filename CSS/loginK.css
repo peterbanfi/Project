@@ -1,15 +1,15 @@
-body {
+#myModalK body {
     margin: 20px 0%;
     box-sizing: border-box;
     font-family: 'Padauk', sans-serif;
     background-color: #ccd9ff
 }
 
-.container {
+#myModalK .containerK {
     box-sizing: border-box;
     position: relative;
     margin: auto;
-    width: 500px;
+    width: 600px;
     height: 500px;
     background: linear-gradient(to top right, #33ccff 0%, #0033cc 100%, #33ffff 0%, #33ccff);
 }
@@ -18,7 +18,7 @@ body {
     box-sizing: border-box;
     position: absolute;
     top: 100px;
-    left: 100px;
+    left: 150px;
     width: 300px;
     height: 240px;
     border: 1px solid #ddddcc;
@@ -26,13 +26,13 @@ body {
     padding: 60px 15px;
 }
 
-.container p {
+#myModalK .containerK p {
     margin-top: 0;
     margin-bottom: 0;
     padding: 5px 5px;
 }
 
-.container input {
+#myModalK .containerK input {
     box-sizing: border-box;
     display: block;
     width: 100%;
@@ -46,24 +46,24 @@ body {
     background-repeat: no-repeat;
 }
 
-.container input[type="text"] {
+#myModalK .containerK input[type="text"] {
     background-image: url('../IMG/user.png');
     text-indent: 30px;
 }
 
-.container input[type="password"] {
+#myModalK .containerK input[type="password"] {
     background-image: url('../IMG/lock.png');
     text-indent: 30px;
 }
 
-.container p#copy {
+#myModalK .containerK p#copyK {
     position: absolute;
     font-size: 0.6em;
     color: white;
-    margin: 340px 165px;
+    margin: 340px 220px;
 }
 
-.container input[type="button"] {
+#myModalK .containerK input[type="button"] {
     background-color: #0033ccbb;
     padding: 8px;
     color: white;
@@ -71,12 +71,12 @@ body {
     margin-top: 10px;
 }
 
-.container input[type="button"]:hover {
+#myModalK .containerK input[type="button"]:hover {
     background-color: #1a52f8ef;
     cursor: pointer;
 }
 
-.container input[type="checkbox"] {
+#myModalK .containerK input[type="checkbox"] {
     position: absolute;
     display: inline;
     width: auto;
@@ -84,7 +84,7 @@ body {
     left: 40px;
 }
 
-label {
+#myModalK label {
     position: absolute;
     font-size: 0.7em;
     color: black;
@@ -92,7 +92,7 @@ label {
     left: 60px;
 }
 
-p#forgot {
+#myModalK p#forgotK {
     position: absolute;
     font-size: 0.7em;
     color: black;
@@ -102,36 +102,36 @@ p#forgot {
     top: 205px;
 }
 
-p#forgot:hover {
+#myModalK p#forgotK:hover {
     cursor: pointer;
 }
 
-p#error,
-p#error2 {
+#myModalK p#errorK,
+#myModalK p#error2K {
     position: absolute;
-    top: 250px;
-    left: 145px;
+    top: 260px;
+    left: 200px;
     color: red;
     font-size: 0.8em;
     font-weight: bolder;
 }
 
-p#error {
-    top: 250px;
-    left: 120px;
+#myModalK p#errorK {
+    top: 260px;
+    left: 180px;
     font-size: 0.7em;
 }
 
-p#success {
+#myModalK p#successK {
     position: absolute;
-    top: 250px;
-    left: 120px;
+    top: 260px;
+    left: 230px;
     color: #0cf333;
     font-size: 0.8em;
     font-weight: bolder;
 }
 
-.icon {
+#myModalK .icon {
     position: absolute;
     background-color: #334474;
     width: 100px;
@@ -140,7 +140,7 @@ p#success {
     color: white;
     font-size: 45px;
     top: 55px;
-    left: 200px;
+    left: 250px;
     z-index: 1;
     text-align: center;
     line-height: 2.1;

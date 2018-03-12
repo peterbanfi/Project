@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Nunito" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/loginO.css">
+    <link rel="stylesheet" href="css/loginK.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <title>Projekt munka</title>
 
@@ -67,7 +68,7 @@
                                             <a href="loginR.html">Réka Login</a>
                                         </li>
                                         <li>
-                                            <a href="loginK.html">Kinga Login</a>
+                                            <a id="loginModalK" data-toggle="modal" data-target="#myModalK">Kinga Login</a>
                                         </li>
                                         <li>
                                             <a href="loginZs.html">Zsombor Login</a>
@@ -335,7 +336,38 @@
                     </div>
                 </div>
             </div>
+            <div class="modal fade" id="myModalK" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="containerK">
+                                <div class="icon">
+                                    <i class="fas fa-camera"></i>
+                                </div>
+                                <form id="login-form">
+                                    <p>
+                                        <input type="text" name="user" id="userK" placeholder="Username">
+                                    </p>
+                                    <p>
+                                        <input type="password" name="pass" id="passK" placeholder="********">
+                                    </p>
+                                    <p>
+                                        <input type="button" value="LOGIN" onclick="ellenoriz()">
+                                    </p>
 
+                                    <input type="checkbox" name="remember" id="rememberK" checked>
+                                    <label for="remember">Remember me</label>
+                                    <p id="forgotK" onclick="remember()">Forgot password?</p>
+                                </form>
+                                <p id="errorK"></p>
+                                <p id="error2K"></p>
+                                <p id="successK"></p>
+                                <p id="copyK">Copyright 2018 Your Brand Name Inc</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -343,6 +375,7 @@
     <script src="/JS/index.js"></script>
     <script src="/JS/loginP.js"></script>
     <script src="/JS/loginO.js"></script>
+    <script src="js/loginK.js"></script>
 </body>
 
 </html>
