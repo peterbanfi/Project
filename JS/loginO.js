@@ -42,29 +42,29 @@ var users = [{
 var proba = 0;
 
 function login() {
-    document.querySelector('#error').innerHTML = '';
+    document.querySelector('#Oerror').innerHTML = '';
     document.querySelector('#user').innerHTML = '';
     var user = document.querySelector('#user').value;
     var pass = document.querySelector('#pass').value;
     if ((user == '' || pass == '') && proba <= 3) {
-        document.querySelector('#error').innerHTML = 'Meg kell adnod a felhasználóneved és jelszavad.';
+        document.querySelector('#Oerror').innerHTML = 'Meg kell adnod a felhasználóneved és jelszavad.';
 
     } else if (proba <= 3) {
         var talalat = false;
         for (var i in users) {
             if (users[i].email == user && users[i].password == pass) {
                 var talalat = true;
-                document.querySelector('#success').innerHTML = `Belépve: ${users[i].email}`;
+                document.querySelector('#Osuccess').innerHTML = `Belépve: ${users[i].email}`;
                 window.location.href = 'adminO.html';
             }
         }
         if (!talalat) {
-            document.querySelector('#error').innerHTML = 'Hibás felhasználónév vagy jelszó.';
+            document.querySelector('#Oerror').innerHTML = 'Hibás felhasználónév vagy jelszó.';
             proba++;
         }
         if (proba >= 3) {
-            document.querySelector('#success').innerHTML = '';
-            document.querySelector('#error').innerHTML = 'Háromszor is elrontottad az adataidat, 24 órára kitiltottunk.';
+            document.querySelector('#Osuccess').innerHTML = '';
+            document.querySelector('#Oerror').innerHTML = 'Háromszor is elrontottad az adataidat, 24 órára kitiltottunk.';
         }
     }
 }

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/styleO.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Nunito" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/loginO.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <title>Projekt munka</title>
 
@@ -60,7 +61,7 @@
                                             <a id="loginModalP" data-toggle="modal" data-target="#myModalP">Peti Login</a>
                                         </li>
                                         <li>
-                                            <a href="loginO.html">Olivér Login</a>
+                                            <a id="loginModalO" data-toggle="modal" data-target="#myModalO">Olivér Login</a>
                                         </li>
                                         <li>
                                             <a href="loginR.html">Réka Login</a>
@@ -303,12 +304,45 @@
                     </div>
                 </div>
             </div>
+            <div class="modal fade" id="myModalO" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="cont">
+
+                                <div class="loginO">
+                                    <form action="">
+                                        <i class="fa fa-user" style="font-size:24px"></i>
+                                        <input type="text" placeholder="Username" id="user">
+                                        <i class="fa fa-lock" style="font-size:24px"></i>
+                                        <input type="password" placeholder="***********" id="pass">
+                                        <span id="Oerror"></span>
+                                        <span id="Osuccess"></span>
+                                        <input type="button" value="Login" onclick="login()">
+                                        <input type="checkbox" name="rem" id="">
+                                        <label for="rem">Remember me</label>
+                                    </form>
+                                    <a href="#" onclick="forgot()">Forgot password?</a>
+                                </div>
+                                <div class="camera">
+                                    <i class="fa fa-camera" style="font-size:50px"></i>
+                                </div>
+                                <div class="footer">
+                                    <span>Copyright &copy 2018 Your brand name.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
     </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/JS/bootstrap.min.js"></script>
     <script src="/JS/index.js"></script>
     <script src="/JS/loginP.js"></script>
+    <script src="/JS/loginO.js"></script>
 </body>
 
 </html>

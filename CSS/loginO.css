@@ -1,22 +1,18 @@
-body {
+#myModalO body {
     background-color: #234465;
 }
 
-.container {
+#myModalO .cont {
     background: radial-gradient(#2F86D3, #859ED6, #234465);
     width: 600px;
     height: 600px;
     margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
-.camera {
+#myModalO .camera {
     background-color: #2D5377;
     display: inline-block;
-    height: 100px;
+    height: 150px;
     width: 150px;
     padding-top: 50px;
     text-align: center;
@@ -24,9 +20,10 @@ body {
     position: absolute;
     top: 80px;
     left: 225px;
+    color: white;
 }
 
-.login {
+#myModalO .loginO {
     position: absolute;
     top: 150px;
     left: 100px;
@@ -36,11 +33,11 @@ body {
     border-radius: 2%;
 }
 
-input {
+#myModalO input {
     display: block;
 }
 
-.fa-user {
+#myModalO .fa-user {
     position: absolute;
     color: grey;
     top: 127px;
@@ -48,27 +45,27 @@ input {
     z-index: 1;
 }
 
-.fa-lock {
+#myModalO .fa-lock {
     position: absolute;
     color: grey;
     font-size: 24px;
-    top: 175px;
+    top: 170px;
     left: 58px;
     z-index: 1;
 }
 
-input[type="text"],
-input[type="password"] {
-    width: 270px;
-    height: 30px;
+#myModalO input[type="text"],
+#myModalO input[type="password"] {
+    width: 300px;
+    height: 35px;
     position: relative;
     top: 120px;
     margin-bottom: 10px;
     left: 50px;
-    padding-left: 30px;
+    padding-left: 35px;
 }
 
-input[type="button"] {
+#myModalO input[type="button"] {
     width: 300px;
     height: 30px;
     position: absolute;
@@ -79,14 +76,14 @@ input[type="button"] {
     border: none;
 }
 
-input[type="checkbox"] {
+#myModalO input[type="checkbox"] {
     display: inline-block;
     position: absolute;
     top: 265px;
     left: 50px;
 }
 
-label {
+#myModalO label {
     display: inline-block;
     position: absolute;
     top: 265px;
@@ -94,7 +91,7 @@ label {
     color: #25476C;
 }
 
-a {
+#myModalO a {
     display: inline-block;
     position: absolute;
     top: 265px;
@@ -105,18 +102,18 @@ a {
     font-style: italic;
 }
 
-i {
+#myModalO i {
     color: white;
 }
 
-.footer {
+#myModalO .footer {
     position: absolute;
     top: 460px;
     left: 190px;
     color: white;
 }
 
-#error {
+#Oerror {
     color: red;
     font-size: 10px;
     position: absolute;
@@ -124,7 +121,7 @@ i {
     left: 50px;
 }
 
-#success {
+#Osuccess {
     color: green;
     font-size: 10px;
     position: absolute;
