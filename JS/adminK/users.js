@@ -262,11 +262,13 @@ function createTable(userData, head, props) {
     var table = document.createElement('table');
     table.classList.add("table", "table-striped", "table-hover");;
     table.appendChild(generateHead(head));
+    var tableBody = document.createElement('tbody');
+    table.appendChild(tableBody);
     for (var i = 0; i < userData.length; i++) {
         var tr = document.createElement('tr');
         for (var j = 0; j < props.length; j++) {
             tr.appendChild(generateRow(userData[i], props[j]));
-            table.appendChild(tr);
+            tableBody.appendChild(tr);
         }
         document.querySelector('#panel-body').appendChild(table);
     }
